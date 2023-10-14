@@ -1,0 +1,193 @@
+{
+  "name": "SCN",
+  "engine": {
+    "authorityRound": {
+      "params": {
+        "stepDuration": "3",
+        "blockReward": "0x0",
+        "maximumUncleCountTransition": 0,
+        "maximumUncleCount": 0,
+        "validators": {
+          "multi": {
+            "0": {
+              "list": [
+                "0x794aD6a5E376186B3473e25792568CE04cc9FDED",
+                "0x3B5f41FE7f846D3A500C6f29bbcf8103F11a08c7",
+                "0x41FD67f85baF182f43c9388D416B29FaF5A8d44A",
+                "0x0879012C33eF370a58C4b66494E6C21C6403930c",
+                "0x3D6245fC15044c0206c68373e9152708Bb2C02bE",
+                "0x17458dE82d74D90a95434C370256a995d553e643",
+                "0x2882C23095B406ba794ac853729fD7d26582bb97",
+                "0xfF98A6389B6e2e849bF3Ee570Fc85a5837ad81b7",
+                "0xCDF4D6b87DA3DEfA95068aBFA8842a5a0038BCa9",
+                "0xd99577b4F4470BdFC0cd83016Ca9656D5caF3fa0",
+                "0xe71e2cd6C590B5EBffAD63b7d61Ea7148cC019bb",
+                "0xcAA7A31053874AeeA73AcB59E273541005e8e354",
+                "0x468a74D5C2FffDE27f7377758db6471b539160e3",
+                "0x730f522E220f09D35Bb06B5844D53a0F5f69Cc41",
+                "0xc2EF06ab526A68E83f0003D6b16602c41E372B36",
+                "0xa5fDA10F0FD68E5063331a40e523D7D1C415561D",
+                "0x1Ca44d2B2c3b43A962134A6f81Aa1CE3d7ecAf28",
+                "0xa3f5b36ad0b92B08C91405Eea32EC2e72E842BEE",
+                "0xBb7894E4e254557a6dB23E12b0061964a1dE0c92",
+                "0xB9a00883D3c35FA0dfF7439A520766e05451F26B",
+                "0xCD46c18b9012D355f3ad08aF71A541f5E9645320"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "params": {
+    "gasLimitBoundDivisor": "0x400000",
+    "maximumExtraDataSize": "0x100",
+    "minGasLimit": "0x0",
+    "networkID": "0x770",
+    "eip155Transition": 0,
+    "validateChainIdTransition": 0,
+    "eip140Transition": 0,
+    "eip211Transition": 0,
+    "eip214Transition": 0,
+    "eip658Transition": 0,
+    "eip150Transition": "0x0",
+    "eip160Transition": "0x0",
+    "eip161abcTransition": "0x0",
+    "eip161dTransition": "0x0",
+    "eip98Transition": "0x7fffffffffffff"
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x112A880"
+  },
+  "nodes": [
+    "enode://5f1c47ab4325c78090bef3415b03dbaf794d82d79895d357fa4f87fd44d0ed44cf4a8647a7297f81aee1fef089033134d1edf3b27d5a365485a92cf01b34ac1b@20.46.149.118:3030",
+    "enode://24b4dd23248671ce136fe53ca4b37dbba55892f20f8b39cff33cd34e32e912490742ec6acbbd1e5225dadb3fa03a2595a63f1fcecb937ca1d87ac2fb737a892e@20.56.158.191:30300",
+    "enode://a75b92c38396f9b29d94d24295b797c74f6194db30a831c61ca43fcec8a37f87e68848f6b2cac1d9f8bf5c531f558b3d33c6f158a934b0e01ed03456c5403c0a@20.213.252.248:30300",
+    "enode://d3334b142724a0860944068514950b54927327e2e6a9a3c1a86a930024da2839cec40c489ca964a1e50a3a4e10488db5c0fe21951b9960846de11d41b65bad45@20.189.76.88:30300"
+  ],
+  "accounts": {
+    "0x0000000000000000000000000000000000000001": {
+      "balance": "1",
+      "builtin": {
+        "name": "ecrecover",
+        "pricing": {
+          "linear": {
+            "base": 3000,
+            "word": 0
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000002": {
+      "balance": "1",
+      "builtin": {
+        "name": "sha256",
+        "pricing": {
+          "linear": {
+            "base": 60,
+            "word": 12
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000003": {
+      "balance": "1",
+      "builtin": {
+        "name": "ripemd160",
+        "pricing": {
+          "linear": {
+            "base": 600,
+            "word": 120
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000004": {
+      "balance": "1",
+      "builtin": {
+        "name": "identity",
+        "pricing": {
+          "linear": {
+            "base": 15,
+            "word": 3
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000005": {
+      "builtin": {
+        "name": "modexp",
+        "activate_at": 0,
+        "pricing": {
+          "modexp": {
+            "divisor": 20
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000006": {
+      "builtin": {
+        "name": "alt_bn128_add",
+        "activate_at": 0,
+        "pricing": {
+          "linear": {
+            "base": 500,
+            "word": 0
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000007": {
+      "builtin": {
+        "name": "alt_bn128_mul",
+        "activate_at": 0,
+        "pricing": {
+          "linear": {
+            "base": 40000,
+            "word": 0
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000008": {
+      "builtin": {
+        "name": "alt_bn128_pairing",
+        "activate_at": 0,
+        "pricing": {
+          "alt_bn128_pairing": {
+            "base": 100000,
+            "pair": 80000
+          }
+        }
+      }
+    },
+    "0xD685270e3A40D9B5D80613D7Ab6317aB051621c6": {
+      "balance": "30000000000000000000000000000"
+    },
+    "0x1b44Cb611e0F1f01969306aDD731552e78f2aBDF": {
+      "balance": "20000000000000000000000000000"
+    },
+    "0x3Fba2cb53bdD5693Ab5ccFB6fE657bc4Fe6b8801": {
+      "balance": "15000000000000000000000000000"
+    },
+    "0xfbc7E54d972782910a03fbB09c8EC7eb7F9c2206": {
+      "balance": "10000000000000000000000000000"
+    },
+    "0x5143fe3fD0e5B48Ac9af843E565440fF2C5CB401": {
+      "balance": "10000000000000000000000000000"
+    },
+    "0x071A047fE88C37d759e39ae3d6B040E9fC1A6Fe5": {
+      "balance": "10000000000000000000000000000"
+    },
+    "0x669866F57a4666812B73F854040356A4f394539D": {
+      "balance": "5000000000000000000000000000"
+    }
+  }
+}
